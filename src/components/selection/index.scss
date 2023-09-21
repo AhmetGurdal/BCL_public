@@ -1,0 +1,38 @@
+.selection {
+  max-width: 30rem;
+  width: 50vw;
+  height: 80px;
+  margin: 40px;
+  font-size: 20px;
+  font-family: sans-serif;
+  background: rgb(241, 243, 245, 0.9);
+  border-radius: 10px;
+  color: darkslategrey;
+  /* box-shadow: rgb(220, 228, 235) 0px 20px 30px -18px; */
+  box-shadow: rgba(218, 217, 217, 0.328) 0px 5px 10px -5px,
+    rgba(210, 210, 210, 0.236) 0px 10px 10px -5px;
+
+  &:not(.disabled):hover {
+    background: rgb(241, 243, 245, 0.8);
+  }
+}
+
+.reject {
+  background: #dd7973;
+  color: white;
+  &:not(.disabled):hover {
+    background: #fd7973;
+  }
+}
+
+.accept {
+  background: #5783db;
+  color: white;
+  &:not(.disabled):hover {
+    background: #57a3db;
+  }
+}
+.disabled {
+  background: #b5b5b5;
+  color: #bfbfbf;
+}

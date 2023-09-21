@@ -1,0 +1,114 @@
+[
+  {
+    "type": "TF",
+    "question": "Sözleşmeye uygulanacak hukuk belirli mi?",
+    "options": [
+      { "isFinish": false, "nextQuestion": 1 },
+      { "isFinish": false, "nextQuestion": 2 }
+    ]
+  },
+  {
+    "type": "DD",
+    "question": "Seçilen hukuku belirtiniz.",
+    "options": [
+      {
+        "text": "EEE",
+        "isFinish": true,
+        "finishType": "average",
+        "prevStep": 1
+      }
+    ]
+  },
+  {
+    "type": "SS",
+    "question": "İşlem türü nedir?",
+    "options": [
+      { "text": "Alım ve satım", "isFinish": false, "nextQuestion": 3 },
+      { "text": "Transfer", "isFinish": false, "nextQuestion": 4 }
+    ]
+  },
+  {
+    "type": "SS",
+    "question": "Ticari mi Şahsi mi?",
+    "options": [
+      {
+        "text": "Ticari",
+        "isFinish": false,
+        "nextQuestion": 9
+      },
+      { "text": "Şahsi", "isFinish": false, "nextQuestion": 10 }
+    ]
+  },
+  {
+    "type": "SS",
+    "question": "Transfer amacı nedir?",
+    "options": [
+      { "text": "Bağışlama", "isFinish": false, "nextQuestion": 5 },
+      {
+        "text": "Bir mal ya da hizmetin ifası karşılığında ödeme amaçlı",
+        "isFinish": false,
+        "nextQuestion": 10
+      }
+    ]
+  },
+  {
+    "type": "TF",
+    "question": "Daha sıkı ilişkili hukuk var mı?",
+    "options": [
+      { "isFinish": false, "nextQuestion": 6 },
+      { "isFinish": true, "finishType": "static", "answerId": 1 }
+    ]
+  },
+  {
+    "type": "DD",
+    "question": "Tarafların yerleşim yerleri",
+    "options": [
+      { "text": "AAA", "isFinish": false, "nextQuestion": 7 },
+      { "text": "BBB", "isFinish": false, "nextQuestion": 7 }
+    ],
+    "nextQuestion": 7
+  },
+  {
+    "type": "DD",
+    "question": "Milli Hukukları",
+    "options": [
+      { "text": "AAA", "isFinish": false, "nextQuestion": 8 },
+      { "text": "BBB", "isFinish": false, "nextQuestion": 8 }
+    ],
+    "nextQuestion": 8
+  },
+  {
+    "type": "DD",
+    "question": "Borsanın kayıtlı olduğu yer",
+    "options": [
+      {
+        "text": "AAA",
+        "isFinish": true,
+        "finishType": "average",
+        "prevStep": 3
+      },
+      {
+        "text": "BBB",
+        "isFinish": true,
+        "finishType": "average",
+        "prevStep": 3
+      }
+    ]
+  },
+  {
+    "type": "TF",
+    "question": "Daha sıkı ilişkili hukuk var mı?",
+    "options": [
+      { "isFinish": false, "nextQuestion": 6 },
+      { "isFinish": true, "finishType": "static", "answerId": 2 }
+    ]
+  },
+  {
+    "type": "TF",
+    "question": "Daha sıkı ilişkili hukuk var mı?",
+    "options": [
+      { "isFinish": false, "nextQuestion": 6 },
+      { "isFinish": true, "finishType": "static", "answerId": 0 }
+    ]
+  }
+]

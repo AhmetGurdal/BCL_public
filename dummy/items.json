@@ -1,0 +1,836 @@
+[
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Sözleşmeye uygulanacak hukuk belirli mi?",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 1,
+      "function": {
+        "name": "group0"
+      }
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 6
+      }
+    }
+  },
+
+  {
+    "type": "Answer",
+    "answerType": "global"
+  },
+  {
+    "type": "Answer",
+    "text": "Satıcının mutad mesken hukuku",
+    "answerType": "static"
+  },
+  {
+    "type": "Answer",
+    "text": "Bağışlayanın mutad mesken hukuku",
+    "answerType": "static"
+  },
+  {
+    "type": "Answer",
+    "text": "Satıcının iş yerinin olduğu yer hukuku",
+    "answerType": "static"
+  },
+  {
+    "type": "Answer",
+    "answerType": "function",
+    "function": {
+      "name": "avgAll",
+      "defaultParams": { "prevStep": 1 }
+    }
+  },
+
+  {
+    "type": "Question",
+    "questionType": "SingleSelect",
+    "question": "İşlem türü",
+    "options": [
+      { "text": "Alım-Satım", "nextItemID": 7 },
+      { "text": "Transfer", "nextItemID": 19 }
+    ]
+  },
+  {
+    "type": "Question",
+    "questionType": "SingleSelect",
+    "question": "Sözleşmenin kuruluş amacı?",
+    "options": [
+      {
+        "text": "Ticari-Mesleki",
+        "nextItemID": 8
+      },
+      { "text": "Bireysel", "nextItemID": 10 }
+    ]
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Satıcının iş yeri",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 1,
+      "function": {
+        "name": "group0"
+      }
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 9
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Satıcının yerleşim yeri",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 1,
+      "function": { "name": "group0" }
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 1,
+        "function": { "name": "group0" }
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "SingleSelect",
+    "question": "Tüketici işlemi var mı?",
+    "options": [
+      { "text": "Var", "nextItemID": 3 },
+      { "text": "Yok", "nextItemID": 11 }
+    ]
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Satıcı mutad meskeni",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "function": { "name": "group0" },
+      "nextItemID": 1
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 12
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Kripto para borsasının mutad meskeni",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 13
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 13
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Kripto para borsasının iş yeri",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 14
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 14
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Kripto para borsasının kayıtlı olduğu yer",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 15
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 15
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Sözleşme Dili",
+    "fileOption": {
+      "filename": "languages.json",
+      "valueCol": "law",
+      "labelCol": "language",
+      "nextItemID": 16
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 16
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Alıcıların milli hukukları",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 17
+    },
+    "props": {
+      "multipleSelection": {
+        "limit": 3
+      },
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 17
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Alıcıların yerleşim yerleri",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 18
+    },
+    "props": {
+      "multipleSelection": {
+        "limit": 3
+      },
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 18
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Alıcıların mutad meskenleri",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "function": { "name": "group1", "args": { "step": 7 } },
+      "nextItemID": 1
+    },
+    "props": {
+      "multipleSelection": {
+        "limit": 3
+      },
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "function": { "name": "group1", "args": { "step": 7 } },
+        "nextItemID": 2
+      }
+    }
+  },
+
+  {
+    "type": "Question",
+    "questionType": "SingleSelect",
+    "question": "Transfer amacı nedir?",
+    "options": [
+      { "text": "Bağışlama", "nextItemID": 29 },
+      {
+        "text": "Takas",
+        "nextItemID": 20
+      },
+      {
+        "text": "Ödünç",
+        "nextItemID": 39
+      }
+    ]
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Alıcı cüzdanlarının bulunma yerleri",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 21
+    },
+    "props": {
+      "multipleSelection": {
+        "limit": 10
+      },
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 21
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Satıcı cüzdanının bulunma yeri",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 22
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 22
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Sözleşme Dili",
+    "fileOption": {
+      "filename": "languages.json",
+      "valueCol": "law",
+      "labelCol": "language",
+      "nextItemID": 23
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 23
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Alıcı milli hukukları",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 24
+    },
+    "props": {
+      "multipleSelection": {
+        "limit": 3
+      },
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 24
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Satıcı milli hukuku",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 25
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 25
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Alıcı yerleşim yerleri",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 26
+    },
+    "props": {
+      "multipleSelection": {
+        "limit": 3
+      },
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 26
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Satıcı yerleşim yeri",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 27
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 27
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Alıcı mutad meskenleri",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 28
+    },
+    "multipleSelection": {
+      "limit": 3
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 28
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Satıcı mutad meskeni",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "function": { "name": "group1", "args": { "step": 9 } },
+      "nextItemID": 1
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "function": { "name": "group1", "args": { "step": 9 } },
+        "nextItemID": 1
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Bağışlayanın mutad mesken hukuku",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 30
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 30
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Bağışlayanın cüzdanının bulunma yeri",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 31
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 31
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Bağışı alanın cüzdanının bulunma yeri",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 32
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 32
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Sözleşme Dili",
+    "fileOption": {
+      "filename": "languages.json",
+      "valueCol": "law",
+      "labelCol": "language",
+      "nextItemID": 33
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 33
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Bağışlayanın milli hukuku",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 34
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 34
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Bağış alanın milli hukuku",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 35
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 35
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Bağışlayanın yerleşim yeri",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 36
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 36
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Bağış alanın yerleşim yeri",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 37
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 37
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Bağışlayanın mutad meskeni",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 38
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 38
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Bağış alanın mutad meskeni",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "function": { "name": "group1", "args": { "step": 10 } },
+      "nextItemID": 1
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "function": { "name": "group1", "args": { "step": 10 } },
+        "nextItemID": 1
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Ödünç verenin mutad mesken hukuku",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 40
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 40
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Ödünç verenin cüzdanının bulunma yeri",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 41
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 41
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Ödünç alanın cüzdanının bulunma yeri",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 42
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 42
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Sözleşme Dili",
+    "fileOption": {
+      "filename": "languages.json",
+      "valueCol": "law",
+      "labelCol": "language",
+      "nextItemID": 43
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 43
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Ödünç verenin milli hukuku",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 44
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 44
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Ödünç alanın milli hukuku",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 45
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 45
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Ödünç verenin yerleşim yeri",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 46
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 46
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Ödünç alanın yerleşim yeri",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 47
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 47
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Ödünç verenin mutad meskeni",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 48
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "nextItemID": 48
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "Ödünç alanın mutad meskeni",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "function": { "name": "group1", "args": { "step": 10 } },
+      "nextItemID": 1
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "Belirsiz",
+        "function": { "name": "group1", "args": { "step": 10 } },
+        "nextItemID": 1
+      }
+    }
+  }
+]
