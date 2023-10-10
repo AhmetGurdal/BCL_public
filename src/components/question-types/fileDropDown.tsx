@@ -7,12 +7,14 @@ import { Loader } from "../loader";
 import { setReturnValue } from "@/models/return";
 import { HistoryType } from "../history";
 import { ACTION_TYPES, StateType } from "../reducer";
+import { useTranslation } from "react-i18next";
 
 // import { setReturnValue } from "@/models/return";
 export default function FileDropDownPage(props: {
   state: StateType;
   dispatch: Dispatch<any>;
 }) {
+  const { t } = useTranslation();
   const question = props.state.currentItem as IQuestion;
   // console.log("Question", question);
   const [options, setOptions] = useState<{ value: string; label: string }[]>(
@@ -56,7 +58,8 @@ export default function FileDropDownPage(props: {
   ) : (
     <div>
       <div className="question">
-        {`S${props.state.currentQuestionID} - ` + question.question}
+        {`S${props.state.currentQuestionID} - ` +
+          t(`question.${question.question}`)}
       </div>
       <div className="col">
         {options.length > 0 && selectedValues.length > 0 ? (
@@ -74,13 +77,13 @@ export default function FileDropDownPage(props: {
             className="accept"
             option={
               new Option({
-                text: "Onayla",
+                text: "confirm",
               })
             }
             disabled={selectedValues[0] == null}
             onClick={() => {
               setLoading(true);
-              let _answers: string[] = [];
+              let _answers: object = {};
               if (question.fileOption?.function?.name) {
                 var newHistory: HistoryType = {
                   id: props.state.currentQuestionID,
@@ -118,7 +121,7 @@ export default function FileDropDownPage(props: {
               }
               onClick={() => {
                 setLoading(true);
-                let _answers: string[] = [];
+                let _answers: object = {};
                 if (question.props?.unknown?.function?.name) {
                   var newHistory: HistoryType = {
                     id: props.state.currentQuestionID,

@@ -1,10 +1,10 @@
 import { GlobalStates } from "../global/global";
-import items from "../../../dummy/items.json";
+import items from "../../../dummy/items2.json";
 import { Item, ItemTypes } from "@/models/item";
 import { IQuestion } from "@/models/question";
 
 export type StateType = {
-  answers: string[];
+  answers: object;
   currentQuestionID: number;
   currentItemID: number;
   currentItem: Item;
@@ -14,7 +14,7 @@ export type StateType = {
 };
 
 export const INITIAL_STATE: StateType = {
-  answers: [],
+  answers: {},
   currentQuestionID: 1,
   currentItemID: 0,
   currentItem: items[0] as Item,
@@ -68,8 +68,19 @@ export const globalReducer = (state: any, action: any) => {
 
       return state;
     case ACTION_TYPES.BACK:
-      //TO-DO
-      return state;
+      const _currentItemID =
+        state.history.length > 0
+          ? state.history[state.history.length - 1]?.id
+          : 0;
+      state.history.pop();
+      const newState: StateType = {
+        ...state,
+        history: state.history,
+        currentItemID: _currentItemID,
+        currentItem: items[_currentItemID] as Item,
+        currentQuestionID: state.currentQuestionID - 1,
+      };
+      return newState;
 
     case ACTION_TYPES.LOADING:
       return { ...state, loading: true };

@@ -2,6 +2,7 @@ import { Loader } from "@/components/loader";
 import { StateType } from "@/components/reducer";
 import { Answer } from "@/models/answer";
 import { useEffect, useState } from "react";
+
 export default function AnswerPage(props: { state: StateType }) {
   const [answers, setAnswers] = useState<string[]>([]);
   const [answer, setAnswer] = useState<string>("");
@@ -9,10 +10,7 @@ export default function AnswerPage(props: { state: StateType }) {
   useEffect(() => {
     switch ((props.state.currentItem as Answer).answerType) {
       case "global":
-        let items = props.state.answers.filter(
-          (element) => element !== null && element !== "unknown"
-        );
-        setAnswers(items);
+        setAnswers(Object(props.state.answers)?.answers as string[]);
         break;
       case "static":
         setAnswer((props.state.currentItem as Answer).text);

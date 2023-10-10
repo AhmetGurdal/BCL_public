@@ -46,7 +46,7 @@ body {
 }
 
 .question {
-  margin-bottom: 2rem;
+  margin: 2rem 10rem;
   font-family: sans-serif;
   font-size: 2.5rem;
   display: flex;
@@ -86,7 +86,7 @@ body {
 
 .backBtnSymbol {
   height: 50%;
-  left: 50%;
+  left: 55%;
   position: absolute;
   stroke: currentColor;
   stroke-width: 0;
@@ -98,6 +98,7 @@ body {
 
 .backBtn {
   align-self: flex-start;
+  cursor: pointer;
   margin-left: 50px;
   background: rgba(218, 217, 217, 0.128);
   border-radius: 50%;

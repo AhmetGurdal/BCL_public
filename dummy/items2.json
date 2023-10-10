@@ -1,0 +1,814 @@
+[
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q0",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 2
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 12
+      }
+    }
+  },
+  {
+    "type": "Answer",
+    "answerType": "global"
+  },
+  {
+    "type": "Question",
+    "questionType": "SingleSelect",
+    "question": "q1",
+    "options": [
+      { "text": "s1", "nextItemID": 3 },
+      {
+        "text": "s2",
+        "nextItemID": 18
+      }
+    ]
+  },
+  {
+    "type": "Question",
+    "questionType": "SingleSelect",
+    "question": "q2",
+    "options": [
+      {
+        "text": "s3",
+        "nextItemID": 1,
+        "function": { "name": "firstItem", "args": {} }
+      },
+      {
+        "text": "s4",
+        "nextItemID": 4
+      }
+    ]
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q3",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 1,
+      "function": {
+        "name": "firstandlast",
+        "args": {}
+      }
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 5
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q35",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 6
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 6
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q36",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 7
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 7
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q37",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 8
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 8
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q28",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 9
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 9
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q11",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 10
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 10
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q13",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 11
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 11
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q15",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 1,
+      "function": { "name": "relatedlaw", "args": {} }
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 1
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "SingleSelect",
+    "question": "q1",
+    "options": [
+      { "text": "s1", "nextItemID": 13 },
+      {
+        "text": "s2",
+        "nextItemID": 18
+      }
+    ]
+  },
+  {
+    "type": "Question",
+    "questionType": "SingleSelect",
+    "question": "q2",
+    "options": [
+      {
+        "text": "s3",
+        "nextItemID": 5
+      },
+      {
+        "text": "s4",
+        "nextItemID": 14
+      }
+    ]
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q3",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 15
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 5
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "SingleSelect",
+    "question": "q5",
+    "options": [
+      {
+        "text": "yes",
+        "nextItemID": 1,
+        "function": {
+          "name": "arg",
+          "args": { "value": "Tüketicinin mutad mesken hukuku" }
+        }
+      },
+      {
+        "text": "no",
+        "nextItemID": 16
+      }
+    ]
+  },
+  {
+    "type": "Question",
+    "questionType": "SingleSelect",
+    "question": "q6",
+    "options": [
+      {
+        "text": "yes",
+        "nextItemID": 1,
+        "function": {
+          "name": "arg",
+          "args": { "value": "Tüketicinin mutad mesken hukuku" }
+        }
+      },
+      {
+        "text": "no",
+        "nextItemID": 17
+      }
+    ]
+  },
+  {
+    "type": "Question",
+    "questionType": "SingleSelect",
+    "question": "q7",
+    "options": [
+      {
+        "text": "yes",
+        "nextItemID": 1,
+        "function": {
+          "name": "arg",
+          "args": { "value": "Tüketicinin mutad mesken hukuku" }
+        }
+      },
+      {
+        "text": "no",
+        "nextItemID": 5
+      }
+    ]
+  },
+  {
+    "type": "Question",
+    "questionType": "SingleSelect",
+    "question": "q4",
+    "options": [
+      {
+        "text": "s5",
+        "nextItemID": 19
+      },
+      {
+        "text": "s6",
+        "nextItemID": 28
+      },
+      {
+        "text": "s7",
+        "nextItemID": 37
+      }
+    ]
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q8",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 20
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 20
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q9",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 21
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 21
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q10",
+    "fileOption": {
+      "filename": "languages.json",
+      "valueCol": "law",
+      "labelCol": "language",
+      "nextItemID": 22
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 22
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q11",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 23
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 23
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q12",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 24
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 24
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q13",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 25
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 25
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q14",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 26
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 26
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q15",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 27
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 27
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q16",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 1,
+      "function": { "name": "group", "args": { "step": 9 } }
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 1,
+        "function": { "name": "group", "args": { "step": 9 } }
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q17",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 29
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 29
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q18",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 30
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 30
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q10",
+    "fileOption": {
+      "filename": "languages.json",
+      "valueCol": "law",
+      "labelCol": "language",
+      "nextItemID": 31
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 31
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q20",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 32
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 32
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q21",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 33
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 33
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q22",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 34
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 34
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q23",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 35
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 35
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q24",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 36
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 36
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q25",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 1,
+      "function": { "name": "group", "args": { "step": 9 } }
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 1,
+        "function": { "name": "group", "args": { "step": 9 } }
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q26",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 29
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 29
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q27",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 30
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 30
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q10",
+    "fileOption": {
+      "filename": "languages.json",
+      "valueCol": "law",
+      "labelCol": "language",
+      "nextItemID": 31
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 31
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q29",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 32
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 32
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q30",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 33
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 33
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q31",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 34
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 34
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q32",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 35
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 35
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q33",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 36
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 36
+      }
+    }
+  },
+  {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q34",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 1,
+      "function": { "name": "group", "args": { "step": 9 } }
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 1,
+        "function": { "name": "group", "args": { "step": 9 } }
+      }
+    }
+  }
+]

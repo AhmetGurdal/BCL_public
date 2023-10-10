@@ -1,6 +1,3 @@
-// import Head from "next/head";
-// import MainPage from "@/page-components/MainPage";
-import GroupPage from "@/page-components/GroupPage";
 import MainPage from "@/page-components/MainPage";
 
 export default function Home() {

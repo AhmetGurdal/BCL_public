@@ -8,9 +8,11 @@ interface IOption {
 export class Option implements IOption {
   text: string;
   nextItemID?: number | undefined;
+  function?: FunctionProps | undefined;
   constructor(props: any) {
     this.text = props?.text;
     this.nextItemID = props?.answerId;
+    this.function = props.function;
   }
 }
 
