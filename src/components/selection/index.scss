@@ -1,6 +1,6 @@
 .selection {
   max-width: 30rem;
-  width: 50vw;
+  width: 35vw;
   height: 80px;
   margin: 40px;
   font-size: 20px;
@@ -35,4 +35,5 @@
 .disabled {
   background: #b5b5b5;
   color: #bfbfbf;
+  cursor: not-allowed;
 }

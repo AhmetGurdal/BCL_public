@@ -22,3 +22,15 @@ export class Answer implements IAnswer {
     this.function = props?.function;
   }
 }
+
+export class AnswerPageProps {
+  answers: { texts: string[]; title: string }[] = [];
+  notes: { title: string; text: string }[] = [];
+  constructor(
+    answers: { texts: string[]; title: string }[],
+    notes: { title: string; text: string }[]
+  ) {
+    this.answers = answers;
+    this.notes = notes;
+  }
+}

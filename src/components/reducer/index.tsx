@@ -1,5 +1,5 @@
 import { GlobalStates } from "../global/global";
-import items from "../../../dummy/items2.json";
+import items from "../../../dummy/itemsv3.json";
 import { Item, ItemTypes } from "@/models/item";
 import { IQuestion } from "@/models/question";
 
@@ -37,11 +37,11 @@ export const globalReducer = (state: any, action: any) => {
   switch (action.type) {
     case ACTION_TYPES.SELECT:
       let payload = action.payload;
-      console.log("NEXTITEM => ", items[payload.ni]);
-      if (items[payload.ni]?.type == ItemTypes.Question) {
+      if ((items as any)[payload?.ni]?.type == ItemTypes.Question) {
+        console.log("NEXTITEM => ", (items as any)[payload?.ni]);
         let newState: StateType = {
           ...state,
-          currentItem: items[payload.ni] as Item,
+          currentItem: (items as any)[payload.ni] as Item,
           currentItemID: payload.ni,
           currentQuestionID: state.currentQuestionID + 1,
           history: [
@@ -55,11 +55,11 @@ export const globalReducer = (state: any, action: any) => {
           state: GlobalStates.QUESTION,
         };
         return newState;
-      } else if (items[payload.ni]?.type == ItemTypes.Answer) {
+      } else if ((items as any)[payload.ni]?.type == ItemTypes.Answer) {
         let newState: StateType = {
           ...state,
           answers: payload.answers,
-          currentItem: items[payload.ni] as Item,
+          currentItem: (items as any)[payload.ni] as Item,
           currentItemID: payload.ni,
           state: GlobalStates.ANSWER,
         };
@@ -77,7 +77,7 @@ export const globalReducer = (state: any, action: any) => {
         ...state,
         history: state.history,
         currentItemID: _currentItemID,
-        currentItem: items[_currentItemID] as Item,
+        currentItem: (items as any)[_currentItemID] as Item,
         currentQuestionID: state.currentQuestionID - 1,
       };
       return newState;

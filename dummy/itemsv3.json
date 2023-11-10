@@ -1,0 +1,1155 @@
+{
+  "0": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q0",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 2
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 15
+      }
+    }
+  },
+  "1": {
+    "type": "Answer",
+    "answerType": "global"
+  },
+  "2": {
+    "type": "Question",
+    "questionType": "SingleSelect",
+    "question": "q1",
+    "options": [
+      { "text": "s1", "nextItemID": 3 },
+      {
+        "text": "s2",
+        "nextItemID": 1,
+        "function": {
+          "name": "firstItem",
+          "args": { "titles": ["Uygulanacak Hukuk"], "notes": [] }
+        }
+      }
+    ]
+  },
+  "3": {
+    "type": "Question",
+    "questionType": "SingleSelect",
+    "question": "q2",
+    "options": [
+      {
+        "text": "s3",
+        "nextItemID": 1,
+        "function": {
+          "name": "firstItem",
+          "args": { "titles": ["Uygulanacak Hukuk"], "notes": [] }
+        }
+      },
+      {
+        "text": "s4",
+        "nextItemID": 4
+      }
+    ]
+  },
+  "4": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q15",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 1,
+      "function": {
+        "name": "firstandlast",
+        "args": {
+          "titles": ["Uygulanacak Hukuk"],
+          "notes": [
+            {
+              "title": "MÖHUK.26",
+              "text": "\"Mesleki ve ticari olmayan amaçla mal veya hizmet yada kredi sağlanmasına yönelik ticari sözleşmeleri, tüketicinin mutad meskeni hukukunun emredici hükümleri uyarınca sahip olacağı asgari koruma saklı kalmak kaydıyla, tarafların seçtikleri hukuka tabiidir.\""
+            }
+          ]
+        }
+      }
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 1,
+        "function": {
+          "name": "firstItem",
+          "args": {
+            "titles": ["Uygulanacak Hukuk"],
+            "notes": [
+              {
+                "title": "MÖHUK.26",
+                "text": "\"Mesleki ve ticari olmayan amaçla mal veya hizmet yada kredi sağlanmasına yönelik ticari sözleşmeleri, tüketicinin mutad meskeni hukukunun emredici hükümleri uyarınca sahip olacağı asgari koruma saklı kalmak kaydıyla, tarafların seçtikleri hukuka tabiidir.\""
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "5": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q15",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 6
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 6
+      }
+    }
+  },
+  "6": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q16",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 7
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 7
+      }
+    }
+  },
+  "7": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q38",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 8
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 8
+      }
+    }
+  },
+  "8": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q14",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 9
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 9
+      }
+    }
+  },
+  "9": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q36",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 10
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 10
+      }
+    }
+  },
+  "10": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q37",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 11
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 11
+      }
+    }
+  },
+  "11": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q10",
+    "fileOption": {
+      "filename": "languages.json",
+      "valueCol": "law",
+      "labelCol": "language",
+      "nextItemID": 12
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 12
+      }
+    }
+  },
+  "12": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q11",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 13
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 13
+      }
+    }
+  },
+  "13": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q13",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 1,
+      "function": {
+        "name": "related",
+        "args": {
+          "mostRelatedQuestion": "q16",
+          "step": 9,
+          "titles": ["En Sıkı İlişkili Hukuk", "Daha Sıkı İlişkili Hukuk"],
+          "notes": []
+        }
+      }
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 1,
+        "function": {
+          "name": "related",
+          "args": {
+            "mostRelatedQuestion": "q16",
+            "step": 9,
+            "titles": ["En Sıkı İlişkili Hukuk", "Daha Sıkı İlişkili Hukuk"],
+            "notes": []
+          }
+        }
+      }
+    }
+  },
+  "14": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q15",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 1,
+      "function": {
+        "name": "related",
+        "args": {
+          "step": 9,
+          "titles": ["En Sıkı İlişkili Hukuk", "Daha Sıkı İlişkili Hukuk"],
+          "notes": []
+        }
+      }
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 1,
+        "function": {
+          "name": "related",
+          "args": {
+            "step": 9,
+            "titles": ["En Sıkı İlişkili Hukuk", "Daha Sıkı İlişkili Hukuk"],
+            "notes": []
+          }
+        }
+      }
+    }
+  },
+  "15": {
+    "type": "Question",
+    "questionType": "SingleSelect",
+    "question": "q1",
+    "options": [
+      { "text": "s1", "nextItemID": 16 },
+      { "text": "s2", "nextItemID": 21 }
+    ]
+  },
+  "16": {
+    "type": "Question",
+    "questionType": "SingleSelect",
+    "question": "q2",
+    "options": [
+      {
+        "text": "s3",
+        "nextItemID": 5
+      },
+      {
+        "text": "s4",
+        "nextItemID": 17
+      }
+    ]
+  },
+  "17": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q15",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 18
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 6
+      }
+    }
+  },
+  "18": {
+    "type": "Question",
+    "questionType": "SingleSelect",
+    "question": "q5",
+    "options": [
+      {
+        "text": "yes",
+        "nextItemID": 1,
+        "function": {
+          "name": "arg",
+          "args": {
+            "answers": [
+              {
+                "title": "Daha Sıkı İlişkili Hukuk",
+                "texts": ["Tüketicinin mutad mesken hukuku"]
+              }
+            ],
+            "notes": []
+          }
+        }
+      },
+      {
+        "text": "no",
+        "nextItemID": 19
+      }
+    ]
+  },
+  "19": {
+    "type": "Question",
+    "questionType": "SingleSelect",
+    "question": "q6",
+    "options": [
+      {
+        "text": "yes",
+        "nextItemID": 1,
+        "function": {
+          "name": "arg",
+          "args": {
+            "answers": [
+              {
+                "title": "Daha Sıkı İlişkili Hukuk",
+                "texts": ["Tüketicinin mutad mesken hukuku"]
+              }
+            ],
+            "notes": []
+          }
+        }
+      },
+      {
+        "text": "no",
+        "nextItemID": 20
+      }
+    ]
+  },
+  "20": {
+    "type": "Question",
+    "questionType": "SingleSelect",
+    "question": "q7",
+    "options": [
+      {
+        "text": "yes",
+        "nextItemID": 1,
+        "function": {
+          "name": "arg",
+          "args": {
+            "answers": [
+              {
+                "title": "Daha Sıkı İlişkili Hukuk",
+                "texts": ["Tüketicinin mutad mesken hukuku"]
+              }
+            ],
+            "notes": []
+          }
+        }
+      },
+      {
+        "text": "no",
+        "nextItemID": 6
+      }
+    ]
+  },
+  "21": {
+    "type": "Question",
+    "questionType": "SingleSelect",
+    "question": "q4",
+    "options": [
+      {
+        "text": "s5",
+        "nextItemID": 22
+      },
+      {
+        "text": "s6",
+        "nextItemID": 33
+      },
+      {
+        "text": "s7",
+        "nextItemID": 41
+      }
+    ]
+  },
+  "22": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q39",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 23
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 23
+      }
+    }
+  },
+  "23": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q40",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 24
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 24
+      }
+    }
+  },
+  "24": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q41",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 25
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 25
+      }
+    }
+  },
+  "25": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q42",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 26
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 26
+      }
+    }
+  },
+  "26": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q43",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 27
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 27
+      }
+    }
+  },
+  "27": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q44",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 28
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 28
+      }
+    }
+  },
+  "28": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q45",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 29
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 29
+      }
+    }
+  },
+  "29": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q46",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 30
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 30
+      }
+    }
+  },
+  "30": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q10",
+    "fileOption": {
+      "filename": "languages.json",
+      "valueCol": "law",
+      "labelCol": "language",
+      "nextItemID": 31
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 31
+      }
+    }
+  },
+  "31": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q36",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 32
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 32
+      }
+    }
+  },
+  "32": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q37",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 1,
+      "function": {
+        "name": "group",
+        "args": {
+          "step": 9,
+          "titles": ["Daha Sıkı İlişkili Hukuk"],
+          "notes": []
+        }
+      }
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 1,
+        "function": {
+          "name": "group",
+          "args": {
+            "step": 9,
+            "titles": ["Daha Sıkı İlişkili Hukuk"],
+            "notes": []
+          }
+        }
+      }
+    }
+  },
+  "33": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q17",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 34
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 34
+      }
+    }
+  },
+  "34": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q18",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 35
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 35
+      }
+    }
+  },
+  "35": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q20",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 36
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 36
+      }
+    }
+  },
+  "36": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q21",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 37
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 37
+      }
+    }
+  },
+  "37": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q22",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 38
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 38
+      }
+    }
+  },
+  "38": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q23",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 39
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 39
+      }
+    }
+  },
+  "39": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q24",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 40
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 40
+      }
+    }
+  },
+  "40": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q25",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 49
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 49
+      }
+    }
+  },
+  "41": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q26",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 42
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 42
+      }
+    }
+  },
+  "42": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q27",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 43
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 43
+      }
+    }
+  },
+  "43": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q29",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 44
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 44
+      }
+    }
+  },
+  "44": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q30",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "law",
+      "nextItemID": 45
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 45
+      }
+    }
+  },
+  "45": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q31",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 46
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 46
+      }
+    }
+  },
+  "46": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q32",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 47
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 47
+      }
+    }
+  },
+  "47": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q33",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 48
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 48
+      }
+    }
+  },
+  "48": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q34",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 54
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 54
+      }
+    }
+  },
+  "49": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q10",
+    "fileOption": {
+      "filename": "languages.json",
+      "valueCol": "law",
+      "labelCol": "language",
+      "nextItemID": 50
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 50
+      }
+    }
+  },
+  "50": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q36",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 51
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 51
+      }
+    }
+  },
+  "51": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q37",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 1,
+      "function": {
+        "name": "related",
+        "args": {
+          "mostRelatedQuestion": "q25",
+          "step": 9,
+          "titles": ["En Sıkı İlişkili Hukuk", "Daha Sıkı İlişkili Hukuk"],
+          "notes": []
+        }
+      }
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 1,
+        "function": {
+          "name": "related",
+          "args": {
+            "mostRelatedQuestion": "q25",
+            "step": 9,
+            "titles": ["En Sıkı İlişkili Hukuk", "Daha Sıkı İlişkili Hukuk"],
+            "notes": []
+          }
+        }
+      }
+    }
+  },
+  "52": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q33",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 51
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 51
+      }
+    }
+  },
+  "53": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q34",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 1,
+      "function": {
+        "name": "group",
+        "args": {
+          "step": 9,
+          "titles": ["Daha Sıkı İlişkili Hukuk"],
+          "notes": []
+        }
+      }
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 1,
+        "function": {
+          "name": "group",
+          "args": {
+            "step": 9,
+            "titles": ["Daha Sıkı İlişkili Hukuk"],
+            "notes": []
+          }
+        }
+      }
+    }
+  },
+  "54": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q10",
+    "fileOption": {
+      "filename": "languages.json",
+      "valueCol": "law",
+      "labelCol": "language",
+      "nextItemID": 55
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 55
+      }
+    }
+  },
+  "55": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q36",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 56
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 56
+      }
+    }
+  },
+  "56": {
+    "type": "Question",
+    "questionType": "FileDropDown",
+    "question": "q37",
+    "fileOption": {
+      "filename": "systems.json",
+      "valueCol": "law",
+      "labelCol": "country",
+      "nextItemID": 1,
+      "function": {
+        "name": "related",
+        "args": {
+          "mostRelatedQuestion": "q34",
+          "step": 9,
+          "titles": ["En Sıkı İlişkili Hukuk", "Daha Sıkı İlişkili Hukuk"],
+          "notes": []
+        }
+      }
+    },
+    "props": {
+      "unknown": {
+        "value": "unknown",
+        "text": "s0",
+        "nextItemID": 1,
+        "function": {
+          "name": "related",
+          "args": {
+            "mostRelatedQuestion": "q34",
+            "step": 9,
+            "titles": ["En Sıkı İlişkili Hukuk", "Daha Sıkı İlişkili Hukuk"],
+            "notes": []
+          }
+        }
+      }
+    }
+  }
+}

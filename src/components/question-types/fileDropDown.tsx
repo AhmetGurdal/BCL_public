@@ -82,33 +82,35 @@ export default function FileDropDownPage(props: {
             }
             disabled={selectedValues[0] == null}
             onClick={() => {
-              setLoading(true);
-              let _answers: object = {};
-              if (question.fileOption?.function?.name) {
-                var newHistory: HistoryType = {
-                  id: props.state.currentQuestionID,
-                  q: question.question,
-                  s: selectedValues,
-                };
-                var _args = question.fileOption.function.args
-                  ? question.fileOption.function.args
-                  : {};
-                _answers = setReturnValue(
-                  question.fileOption?.function?.name,
-                  [...props.state.history, newHistory],
-                  _args
-                );
+              if (selectedValues[0]) {
+                setLoading(true);
+                let _answers: object = {};
+                if (question.fileOption?.function?.name) {
+                  var newHistory: HistoryType = {
+                    id: props.state.currentQuestionID,
+                    q: question.question,
+                    s: selectedValues,
+                  };
+                  var _args = question.fileOption.function.args
+                    ? question.fileOption.function.args
+                    : {};
+                  _answers = setReturnValue(
+                    question.fileOption?.function?.name,
+                    [...props.state.history, newHistory],
+                    _args
+                  );
+                }
+                props.dispatch({
+                  type: ACTION_TYPES.SELECT,
+                  payload: {
+                    answers: _answers,
+                    ni: question.fileOption?.nextItemID!,
+                    sv: selectedValues,
+                  },
+                });
+                setSelectedValues([]);
+                setLoading(false);
               }
-              props.dispatch({
-                type: ACTION_TYPES.SELECT,
-                payload: {
-                  answers: _answers,
-                  ni: question.fileOption?.nextItemID!,
-                  sv: selectedValues,
-                },
-              });
-              setSelectedValues([]);
-              setLoading(false);
             }}
           />
           {!!question.props?.unknown && (
