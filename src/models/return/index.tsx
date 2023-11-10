@@ -1,5 +1,4 @@
 import { HistoryType } from "../../components/history";
-import { AnswerPageProps } from "../answer";
 // import * as functions from "./returnFunctions";
 const deciderMap: { [tot: string]: { [key: string]: number } } = {
   "2": {
@@ -242,16 +241,12 @@ export function setReturnValue(
   functionName: string,
   messages: HistoryType[],
   args: any
-): AnswerPageProps {
+): any {
   const result = eval(`${functionName}`)(messages, args);
   return result;
 }
 
-function group(messages: HistoryType[], args: any): AnswerPageProps {
-  console.log("---GROUP---");
-  console.log("Messages : ", messages);
-  console.log("Args : ", args);
-
+function group(messages: HistoryType[], args: any): any {
   const filteredAnswers: { [key: string]: number } = {};
 
   messages
@@ -275,51 +270,48 @@ function group(messages: HistoryType[], args: any): AnswerPageProps {
     }
   }
   let decide = groupDecider(filteredAnswers);
-  return new AnswerPageProps(
-    [
+  return {
+    answers: [
       {
         title: args.titles[0] as string,
         texts: decide.result == 1 ? decide.texts : ["Belirlenemedi"],
       },
     ],
-    args.notes
-  );
+    notes: args.notes,
+  };
 }
 
-function firstItem(messages: HistoryType[], args: any): AnswerPageProps {
-  return new AnswerPageProps(
-    [{ title: args.titles[0], texts: messages[0].s }],
-    args.notes
-  );
+function firstItem(messages: HistoryType[], args: any): any {
+  return {
+    answers: [{ title: args.titles[0], texts: messages[0].s }],
+    notes: args.notes,
+  };
 }
 
-function firstandlast(messages: HistoryType[], args: any): AnswerPageProps {
-  return new AnswerPageProps(
-    [
+function firstandlast(messages: HistoryType[], args: any): any {
+  return {
+    answers: [
       { title: args.titles[0], texts: messages[0].s },
       {
         title: args.titles[1],
         texts: messages[messages.length - 1].s,
       },
     ],
-    args.notes
-  );
+    notes: args.notes,
+  };
 }
 
-function arg(messages: HistoryType[], args: any): AnswerPageProps {
-  return new AnswerPageProps(
-    args.answers.map((answer: { title: string; texts: string[] }) => ({
+function arg(messages: HistoryType[], args: any): any {
+  return {
+    answers: args.answers.map((answer: { title: string; texts: string[] }) => ({
       title: answer.title,
       texts: answer.texts,
     })),
-    args.notes
-  );
+    notes: args.notes,
+  };
 }
 
-function related(messages: HistoryType[], args: any): AnswerPageProps {
-  console.log("---RELATED---");
-  console.log("Messages : ", messages);
-  console.log("Args : ", args);
+function related(messages: HistoryType[], args: any): any {
   const mostRelatedAnswer = messages.filter(
     (e) => e.q == args.mostRelatedQuestion
   )[0].s[0];
@@ -331,8 +323,8 @@ function related(messages: HistoryType[], args: any): AnswerPageProps {
     mostRelatedAnswer: mostRelatedAnswer,
   });
 
-  return new AnswerPageProps(
-    [
+  return {
+    answers: [
       {
         title: args.titles[0],
         texts:
@@ -340,6 +332,6 @@ function related(messages: HistoryType[], args: any): AnswerPageProps {
       },
       { title: most.answers[0].title, texts: most.answers[0].texts },
     ],
-    args.notes
-  );
+    notes: args.notes,
+  };
 }
