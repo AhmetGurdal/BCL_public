@@ -59,7 +59,15 @@ export default function GroupPage() {
     // }
     case GlobalStates.ANSWER:
       return <AnswerPage state={state as StateType} />;
-
+    case GlobalStates.DISCLAIMER:
+        return <div className="answerPage">
+          <div className="answer">
+            İşbu websayfası, "TÜBİTAK 1002 - Milletlerarası Özel Hukukta Kripto Para Alım Satımı İşlemlerine Uygulanacak Hukukun Belirlenmesini Sağlayacak Web Tabanlı  İnteraktif Bir Araç Geliştirilmesi” projesi kapsamında bilgilendirme amacıyla hazırlanmıştır ve uygulanacak hukuk konusunda kesin veriler içermemektedir. Kişi ve kurumları bağlayıcı tavsiye ve görüş niteliği taşımaz. Bu bağlamda işbu websayfasının içeriğini okuyup veri girişi yapan kişilere veya herhangi bir üçüncü kişiye karşı proje ekibinin sorumluluğu ve yükümlülüğü bulunmamaktadır.
+          </div>
+          <button className="clearBtn" onClick={() => dispatch({type:ACTION_TYPES.BEGIN})}>
+            Başla
+          </button>
+        </div>
     case GlobalStates.LOADING:
       return <Loader />;
     default:

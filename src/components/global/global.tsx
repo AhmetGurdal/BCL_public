@@ -9,6 +9,7 @@ export enum GlobalStates {
   LOADING = "LOADING",
   UNKNOWN = "UNKNOWN",
   SETGLOBALVALUE = "SETGLOBALVALUE",
+  DISCLAIMER = "DISCLAIMER"
 }
 
 type GlobalStatePropType = {

@@ -20,7 +20,7 @@ export const INITIAL_STATE: StateType = {
   currentItem: items[0] as Item,
   history: [],
   loading: true,
-  state: GlobalStates.QUESTION,
+  state: GlobalStates.DISCLAIMER,
 };
 
 export const ACTION_TYPES = {
@@ -29,6 +29,7 @@ export const ACTION_TYPES = {
   BACK: "BACK",
   LOADING: "LOADING",
   LOADED: "LOADED",
+  BEGIN:"BEGIN",
 };
 
 export const globalReducer = (state: any, action: any) => {
@@ -86,6 +87,8 @@ export const globalReducer = (state: any, action: any) => {
       return { ...state, loading: true };
     case ACTION_TYPES.LOADED:
       return { ...state, loading: false };
+    case ACTION_TYPES.BEGIN:
+      return {...state, state: GlobalStates.QUESTION};
 
     case ACTION_TYPES.RESET:
       return INITIAL_STATE;

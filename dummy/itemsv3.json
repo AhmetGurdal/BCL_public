@@ -68,7 +68,7 @@
       "function": {
         "name": "firstandlast",
         "args": {
-          "titles": ["Uygulanacak Hukuk"],
+          "titles": ["Seçilen Hukuk", "Mutad Mesken Hukuku"],
           "notes": [
             {
               "title": "MÖHUK.26",
